@@ -3049,12 +3049,21 @@
   .blog-details {
     padding: 80px 0;
   }
+  .blog-details__img img {
+    height: auto!important;
+  }
 }
 
 .blog-details__content {
   position: relative;
 }
 
+.contact-info__wrapper li {
+  height: 250px;
+}
+.contact-info__wrapper li h4 a:hover{
+  color: var(--eduact-white)!important;
+}
 .blog-details__img {
   position: relative;
   margin: 0 0 40px;
@@ -3062,8 +3071,9 @@
 
 .blog-details__img img {
   width: 100%;
-  height: auto;
+  height: 650px;
   border-radius: 14px;
+  object-fit: cover;
 }
 
 .blog-details__meta {
@@ -5344,7 +5354,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .mobile-nav__content {
   width: 300px;
-  background-color: var(--eduact-black2);
+  background-color: var(--eduact-white);
   z-index: 10;
   position: relative;
   height: 100%;
@@ -5374,7 +5384,7 @@ body.megamenu-popup-active .mobile-nav__content {
   top: 20px;
   right: 15px;
   font-size: 18px;
-  color: var(--eduact-white);
+  color: var(--eduact-base);
   cursor: pointer;
 }
 
@@ -5406,7 +5416,7 @@ body.megamenu-popup-active .mobile-nav__content {
   display: flex;
   justify-content: space-between;
   line-height: 30px;
-  color: var(--eduact-white);
+  color: var(--eduact-base);
   font-size: 16px;
   font-family: var(--heading-font);
   text-transform: capitalize;
@@ -5438,7 +5448,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .mobile-nav__content .main-menu__list li a button.expanded {
   transform: rotate(0deg);
-  background-color: var(--eduact-white);
+  background-color: var(--eduact-base);
   color: var(--eduact-black);
 }
 
@@ -5449,7 +5459,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .mobile-nav__social a {
   font-size: 16px;
-  color: var(--eduact-white);
+  color: var(--eduact-base);
   transition: 500ms;
 }
 
@@ -5483,6 +5493,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .mobile-nav__contact li a {
   color: inherit;
   transition: 500ms;
+  color: var(--eduact-base);
 }
 
 .mobile-nav__contact li a:hover {
@@ -7440,12 +7451,15 @@ body.megamenu-popup-active .mobile-nav__content {
   .about-two__thumb__one {
     text-align: left;
   }
+  .about-two__thumb__one img{
+    height: auto!important;
+  }
 }
 
 .about-two__thumb__one img {
   border-radius: 500px;
   max-width: 100%;
-  height: auto;
+  height: 700px;
 }
 
 .about-two__thumb__two {
@@ -9342,6 +9356,8 @@ body.megamenu-popup-active .mobile-nav__content {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
 
 .course-two__thumb svg {
@@ -13390,11 +13406,11 @@ body.megamenu-popup-active .mobile-nav__content {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/backgrounds/page-header-bg-1-1.jpg);
+  background-image: url(../images/backgrounds/course.jpg);
 }
 
 .page-header--bg-two .page-header__bg {
-  background-image: url(../images/backgrounds/page-header-bg-1-2.jpg);
+  background-image: url(../images/backgrounds/course.jpg);
 }
 
 .page-header__overlay {
@@ -16728,5 +16744,19 @@ border-radius: 10px!important;
   body {
       padding-bottom: 60px; /* Account for fixed nav */
   }
+}
+.crs-page-btn button{
+  background-color: var(--eduact-secondary);
+  color: white;
+  width: 180px;
+  height: 40px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+.crs-page-btn button:hover{
+  background-color: var(--eduact-base);
+
 }
 /*# sourceMappingURL=eduact.css.map */

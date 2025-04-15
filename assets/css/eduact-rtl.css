@@ -5335,14 +5335,14 @@ body.megamenu-popup-active .mobile-nav__content {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--eduact-black);
+  background-color: var(--eduact-white);
   opacity: 0.3;
   cursor: url(../images/close.png), auto;
 }
 
 .mobile-nav__content {
   width: 300px;
-  background-color: var(--eduact-black2);
+  background-color: var(--eduact-white);
   z-index: 10;
   position: relative;
   height: 100%;
@@ -5447,7 +5447,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .mobile-nav__social a {
   font-size: 16px;
-  color: var(--eduact-white);
+  color: var(--eduact-base)!important;
   transition: 500ms;
 }
 
