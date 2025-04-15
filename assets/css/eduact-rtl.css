@@ -3422,11 +3422,11 @@
   --eduact-soft4-rgb: 228, 228, 228;
   --eduact-soft5: #F6F6F6;
   --eduact-soft5-rgb: 246, 246, 246;
-  --eduact-base: #4F5DE4;
+  --eduact-base: #019dd6;
   --eduact-base-rgb: 79, 93, 228;
-  --eduact-secondary: #F57005;
+  --eduact-secondary: #27981a;
   --eduact-secondary-rgb: 245, 112, 5;
-  --eduact-black: #2A254D;
+  --eduact-black: #019dd6;
   --eduact-black-rgb: 42, 37, 77;
   --eduact-black2: #000000;
   --eduact-black2-rgb: 0, 0, 0;
@@ -13042,7 +13042,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .main-slider__layer img {
   object-fit: cover;
-  width: auto !important;
+
   transition: transform 1000ms ease, opacity 1000ms ease;
   visibility: hidden;
   opacity: 0;
@@ -16604,3 +16604,8 @@ body.boxed-wrapper .hero-banner__thumb {
   height: 25px;
   opacity: .4;
 }
+.icon-star{
+  color: yellow!important;
+  background-color: yellow!important;
+}
+/* chaseplus */

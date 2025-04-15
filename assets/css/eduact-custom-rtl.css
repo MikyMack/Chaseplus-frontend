@@ -26,5 +26,7 @@ body {
   bottom: -6px;
   transform: rotate(90deg);
 }
-
+.course-btn{
+  width: 100px!important;
+  }
 /*# sourceMappingURL=eduact-custom-rtl.css.map */

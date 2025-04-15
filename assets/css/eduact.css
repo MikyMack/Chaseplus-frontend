@@ -2568,6 +2568,8 @@
   line-height: 25px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .blog-three__meta__author img {
@@ -3422,11 +3424,11 @@
   --eduact-soft4-rgb: 228, 228, 228;
   --eduact-soft5: #F6F6F6;
   --eduact-soft5-rgb: 246, 246, 246;
-  --eduact-base: #4F5DE4;
+  --eduact-base: #019dd6;
   --eduact-base-rgb: 79, 93, 228;
-  --eduact-secondary: #F57005;
+  --eduact-secondary: #27981a;
   --eduact-secondary-rgb: 245, 112, 5;
-  --eduact-black: #2A254D;
+  --eduact-black: #019dd6;
   --eduact-black-rgb: 42, 37, 77;
   --eduact-black2: #000000;
   --eduact-black2-rgb: 0, 0, 0;
@@ -3637,7 +3639,7 @@ h6 {
 
 .preloader {
   position: fixed;
-  background-color: var(--eduact-black);
+  background-color: var(--eduact-white);
   background-position: center center;
   background-repeat: no-repeat;
   top: 0;
@@ -4339,7 +4341,7 @@ h6 {
 
 @media (max-width: 1199px) {
   .stricky-header {
-    display: none;
+
   }
 }
 
@@ -9187,7 +9189,9 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .course-two--carousel {
   padding: 120px 0;
+  margin-top: -5rem!important;
 }
+
 
 @media (max-width: 767px) {
   .course-two--carousel {
@@ -9394,7 +9398,7 @@ body.megamenu-popup-active .mobile-nav__content {
   align-items: center;
   font-size: 14px;
   letter-spacing: 1px;
-  color: var(--eduact-secondary);
+  color:orange;
   margin: 0 0 8px;
 }
 
@@ -9427,7 +9431,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .course-two__bottom {
   position: relative;
-  background-color: var(--eduact-soft2);
+
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -9620,7 +9624,7 @@ body.megamenu-popup-active .mobile-nav__content {
   align-items: center;
   font-size: 14px;
   letter-spacing: 1px;
-  color: var(--eduact-secondary);
+  color: yellow!important;
   margin: 0 0 8px;
 }
 
@@ -12138,12 +12142,13 @@ body.megamenu-popup-active .mobile-nav__content {
 /*-- Copyright --*/
 .copyright {
   position: relative;
-  background-color: #1F1944;
+  background-color: var(--eduact-base);
+  color: white;
   padding: 27px 0 28px;
 }
 
 .copyright__text {
-  color: var(--eduact-text2);
+  color: var(--eduact-white);
   margin: 0;
 }
 
@@ -12204,7 +12209,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   padding: 0 0 0 40px;
   font-size: 18px;
-  color: var(--eduact-text2);
+  color: white;
   line-height: 30px;
   margin: 0 0 17px;
 }
@@ -12221,7 +12226,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--eduact-secondary);
+  color: white;
   font-size: 24px;
   line-height: inherit;
 }
@@ -12261,6 +12266,9 @@ body.megamenu-popup-active .mobile-nav__content {
   color: var(--eduact-white);
   margin: 9px 0 26px;
   position: relative;
+}
+.main-footer-two__navmenu ul li a{
+  color: white!important;
 }
 
 @media (min-width: 1400px) {
@@ -12475,6 +12483,7 @@ body.megamenu-popup-active .mobile-nav__content {
   transition: 500ms;
   max-width: 100%;
   width: auto;
+  height: 50px;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -12749,6 +12758,9 @@ body.megamenu-popup-active .mobile-nav__content {
 @media (max-width: 767px) {
   .main-slider__one.owl-carousel .owl-dots {
     bottom: 50px;
+  }
+  .client-carousel__one__item img{
+    height: 50px!important;
   }
 }
 
@@ -13042,7 +13054,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .main-slider__layer img {
   object-fit: cover;
-  width: auto !important;
+
   transition: transform 1000ms ease, opacity 1000ms ease;
   visibility: hidden;
   opacity: 0;
@@ -13275,6 +13287,7 @@ body.megamenu-popup-active .mobile-nav__content {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+  width: 150px!important;
 }
 
 .main-slider__shape-seven {
@@ -13297,6 +13310,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .main-slider__shape-seven img {
   -webkit-animation: rotated 12s infinite linear;
   animation: rotated 12s infinite linear;
+  width: 50px!important;
 }
 
 .main-slider__shape-eight {
@@ -16605,4 +16619,114 @@ body.boxed-wrapper .hero-banner__thumb {
   opacity: .4;
 }
 
+.course-btn button{
+
+
+all: unset!important;
+background-color: var(--eduact-secondary)!important;
+width: 150px!important;
+color: white!important;
+display: flex!important;
+justify-content: center!important;
+text-align:center;
+height: 40px!important;
+align-items: center!important;
+border-radius: 10px!important;
+  }
+
+  
+.crs-discr {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+
+
+.crs-discr.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+.crs-btn{
+  width: 200px;
+  height: 50px;
+  background-color: var(--eduact-secondary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.testi-logo{
+  height: 50px!important;
+  width: 50px!important;
+}
+/* mobile nav */
+.mob-nav-wrapper {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mob-nav-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+
+.mob-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  width: 20%;
+  padding: 8px 0;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.mob-nav-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  color: #019dd6;
+}
+
+.mob-nav-item.active {
+  background-color: rgba(1, 157, 214, 0.1); /* Light blue background when active */
+}
+
+.mob-nav-item.active .mob-nav-icon {
+  color: #27981a;
+}
+
+.mob-nav-label {
+  font-size: 12px;
+  text-align: center;
+}
+
+.mob-nav-item.active .mob-nav-label {
+  color: #27981a;
+  font-weight: bold;
+}
+
+/* Only show on mobile screens */
+@media (max-width: 768px) {
+  .mob-nav-wrapper {
+      display: block;
+  }
+  
+  body {
+      padding-bottom: 60px; /* Account for fixed nav */
+  }
+}
 /*# sourceMappingURL=eduact.css.map */
