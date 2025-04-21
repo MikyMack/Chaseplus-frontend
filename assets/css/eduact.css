@@ -12838,6 +12838,19 @@ body.megamenu-popup-active .mobile-nav__content {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/assets/images/shapes/slider-bg-1.jpg)!important;
+ 
+}
+@media(max-width:992px){
+  .main-slider__bg {
+    background-image: url(/assets/images/backgrounds/banner-2.jpg)!important;
+  }
+  #banner-sec-section{
+    background-image: url(/assets/images/backgrounds/banner-4.jpg)!important;
+  }
+  #banner-sec{
+    background-image: url(/assets/images/backgrounds/banner-3.jpg)!important;
+  }
 }
 
 .main-slider__item {
@@ -16764,7 +16777,7 @@ border-radius: 10px!important;
 
 
 .container {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -16831,7 +16844,7 @@ border-radius: 10px!important;
 
 .member-image {
   position: relative;
-  height: 350px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -16846,6 +16859,38 @@ border-radius: 10px!important;
   transform: scale(1.03);
 }
 
+/* Responsive design */
+/* Desktop/Laptop view (4 cards per row) */
+@media screen and (min-width: 1200px) {
+  .team-card {
+    width: calc(25% - 30px);
+    max-width: 350px;
+  }
+}
+
+/* Tablet view (2 cards per row) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .team-card {
+    width: calc(50% - 30px);
+    max-width: 400px;
+  }
+}
+
+/* Mobile view (1 card per row) */
+@media screen and (max-width: 767px) {
+  .team-card {
+    width: 100%!important;
+ 
+  }
+  .team-members{
+    padding: 0px!important;
+    width: 100%;
+  }
+  
+  .team-members {
+    gap: 40px;
+  }
+}
 .member-image::after {
   content: '';
   position: absolute;
